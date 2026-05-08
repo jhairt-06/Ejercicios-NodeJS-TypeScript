@@ -14,11 +14,13 @@ Este repositorio contiene la resolución de dos ejercicios prácticos enfocados 
 ## Estructura del Repositorio
 
 ```
-📁 raiz/
-├── 📄 server.js              # Servidor HTTP nativo de Node.js (Ejercicio 1)
-├── 📄 vista1.html            # Formulario de entrada (Ejercicio 1)
-├── 📄 vista2.html            # Vista de resultado con plantilla (Ejercicio 1)
-├── 📄 ejercicio2.ts          # Script de enumeradores en TypeScript (Ejercicio 2)
+raiz/
+├──Ejercicio 1-NodeJs/
+    ├── 📄 server.js              # Servidor HTTP nativo de Node.js (Ejercicio 1)
+    ├── 📄 vista1.html            # Formulario de entrada (Ejercicio 1)
+    ├── 📄 vista2.html            # Vista de resultado con plantilla (Ejercicio 1)
+├──Ejercicio 2-TypeScript/
+    ├── 📄 ejercicio2.ts          # Script de enumeradores en TypeScript (Ejercicio 2)
 └── 📄 Documento_Técnico__NodeJS-TypeScript.pdf
 ```
 
