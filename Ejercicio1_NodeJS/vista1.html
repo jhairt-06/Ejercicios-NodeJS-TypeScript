@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ingresa tu animal favorito</title>
+    <style>
+        
+        body {
+            font-family: Geneva, sans-serif; 
+            background-color: #121212; 
+            margin: 0;
+            /*  Flexbox para centrar todo el contenido vertical y horizontalmente */
+            display: flex; 
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* La pantalla ocupará el 100% del alto  */
+        }
+
+        .tarjeta {
+            background-color: #f6f6ff;
+            border-radius: 5px;
+            padding: 40px;
+            text-align: center;
+            width: 300px;
+        }
+
+        h1 {
+            color: #333333;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        /* ESTILOS DEL CAMPO DE TEXTO */
+        input[type="text"] {
+            width: 90%;
+            padding: 12px;
+            margin-top: 10px;
+            margin-bottom: 25px;
+            border: 1px solid #cccccc;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+
+        input[type="text"]:focus {
+            outline: none;
+            border-color: #007bff; /* Borde azul cuando el usuario escribe */
+        }
+
+        /* ESTILOS DEL BOTÓN */
+        button {
+            background-color: #007bff; 
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-size: 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #0056b3; /* Azul más oscuro al pasar el mouse por encima */
+        }
+    </style>
+</head>
+<body>
+    <div class="tarjeta">
+        <h1>¿Cuál es tu animal favorito?</h1>
+        
+        <form action="/procesar" method="POST">
+            <label for="animal" style="color: #666; font-size: 14px;">Nombre del animal:</label>
+            <input type="text" id="animal" name="animal" placeholder="Ej: León, Tortuga..." required>
+            <button type="submit">Descubrir</button>
+        </form>
+    </div>
+</body>
+</html>
